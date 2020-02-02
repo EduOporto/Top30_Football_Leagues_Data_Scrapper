@@ -272,7 +272,7 @@ class all_dataframes_together():
 class dataframe_to_excel():
     def __init__(self, dataframe, Standings_Scorers_Assistants_Goalkeepers):
         sheets_ordered = ['Argentina', 'Austria', 'Australia', 'Belgium', 'Brazil', 'Switzerland', 'Germany - Bundesliga', 'Germany - 2. Bundesliga', 'Denmark', 'England - Premier League', 'England - Championship', 'England - League One', 'England - League Two', 'England - National league', 'Spain - La Liga', 'Spain - La Liga 2', 'Finland', 'France - Ligue 1', 'France - Ligue 2', 'Netherlands', 'Italy - Serie A', 'Italy - Serie B', 'Japan', 'Norway', 'Poland', 'Portugal', 'Russia', 'Scotland', 'Sweden', 'Turkey', 'All {} together'.format(Standings_Scorers_Assistants_Goalkeepers)]
-        out_path = '{}/{}/{}'.format(os.getcwd(),'Saved dataframes',Standings_Scorers_Assistants_Goalkeepers)
+        out_path = '{}/{}'.format(os.getcwd(),'Saved dataframes')
         sheet_name = dataframe.name
         writer = pd.ExcelWriter('{}/{}.xlsx'.format(out_path, Standings_Scorers_Assistants_Goalkeepers), engine='openpyxl')
         wb = load_workbook('{}/{}.xlsx'.format(out_path, Standings_Scorers_Assistants_Goalkeepers)) 
