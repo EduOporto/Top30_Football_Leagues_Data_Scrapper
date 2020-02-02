@@ -3,7 +3,7 @@ With this program you will be able to download, on .xlsx format, updated datafra
 
 The use is as simple as running the 'Top30 Leagues Data.py' python program and choose between an automatic update of all the data or a specific choice between the standings or the top scorers, assistants or goalkeepers, depending on your needs.
 
-All the data will be atomatically downloaded and saved on .xlsx format, in the different sub-folders of the 'Saved Dataframes' folder.
+All the data will be atomatically downloaded and saved on .xlsx format, in the 'Saved Dataframes' folder.
 
 All the datasets are scrapped and downloaded from https://www.soccerstats.com/ and https://www.transfermarkt.com/
 
