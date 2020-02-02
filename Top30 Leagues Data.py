@@ -55,7 +55,7 @@ def choicer():
             standings_updater()
         else:
             players_updater(choice_2)
-        out_path = '{}/{}/{}'.format(os.getcwd(),'Saved dataframes',choice_2)
+        out_path = '{}/{}'.format(os.getcwd(),'Saved dataframes')
         print("The data has been saved in {}".format(out_path))
     re_choice = str(input('Would you like to do anything else or exit the program (Anything else / Exit): '))
     if re_choice == 'Anything else':
